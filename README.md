@@ -37,6 +37,28 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
+## Uploaded from VS-Code
+Steps:
+1. In Terminal -> Navigate to the local project directory and create a local git repository:
+    git init
+2. Once succesful, click on 'Source Control' icon in left navbar in VS-Code. One should be able to see files ready to be commit-ed. Press on 'Commit' button, provide comments, stage the changes and commit the files.
+ Alternatively you can run from CLI
+
+   git commit -m "Your comment"
+3. Go to Github.com account and create a new Repository. Exclude creating 'README.md', '.gitIgnore' files. Also do not add any License to the repo. Sometimes these settings cause issue while pushing in.
+
+4) Copy the link to this newly created GitHub Repository.
+
+5) Come back to the terminal in VS-CODE and type these commands in succession:
+  git remote add origin <Link to GitHub Repo>     //maps the remote repo link to local git repo
+
+  git remote -v                                  //this is to verify the link to the remote repo 
+
+  git push -u origin master                      // pushes the commit-ed changes into the remote repo
+ 
+ 
+ 
+ 
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
